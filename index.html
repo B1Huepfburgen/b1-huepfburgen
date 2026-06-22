@@ -1,176 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>B1 Hüpfburgen | Hüpfburgverleih Leverkusen</title>
-  <meta name="description" content="Hüpfburgen mieten in Leverkusen und Umgebung. B1 Hüpfburgen vermietet saubere, geprüfte Hüpfburgen für Kindergeburtstage, Familienfeiern und Events.">
-  <style>
-    :root{
-      --blue:#061b49;
-      --orange:#f58220;
-      --light:#f4f7fb;
-      --text:#13213f;
-      --muted:#65708a;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:white;line-height:1.6}
-    header{position:sticky;top:0;background:white;z-index:10;border-bottom:1px solid #e8edf5}
-    .nav{max-width:1150px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
-    .brand{font-weight:800;color:var(--blue);font-size:22px}
-    .nav a{color:var(--blue);text-decoration:none;margin-left:18px;font-weight:700}
-    .btn{display:inline-block;background:var(--orange);color:white!important;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:800}
-    .hero{max-width:1150px;margin:auto;padding:90px 24px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
-    .tag{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-    h1{font-size:56px;line-height:1.05;color:var(--blue);margin:18px 0}
-    h2{font-size:34px;color:var(--blue);margin-bottom:18px}
-    .hero p{font-size:20px;color:var(--muted);max-width:650px}
-    .hero-card{background:linear-gradient(135deg,var(--blue),#123f86);color:white;border-radius:32px;padding:45px;text-align:center;box-shadow:0 20px 50px rgba(6,27,73,.18)}
-    .hero-card div{font-size:72px;margin-bottom:15px}
-    section{max-width:1150px;margin:auto;padding:70px 24px}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-    .card,.price,.castle{background:white;border:1px solid #e8edf5;border-radius:24px;padding:26px;box-shadow:0 14px 35px rgba(6,27,73,.08)}
-    .card span{font-size:34px}
-    .card h3,.castle h3{color:var(--blue);margin:12px 0 8px}
-    .soft{background:var(--light);max-width:none}
-    .inner{max-width:1150px;margin:auto}
-    .castles{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    .placeholder{height:230px;border-radius:22px;background:linear-gradient(135deg,#fff0e5,#eaf1ff);display:flex;align-items:center;justify-content:center;font-size:64px;margin-bottom:20px}
-    .prices{display:grid;grid-template-columns:2fr 1fr;gap:24px}
-    .price-row{display:flex;justify-content:space-between;border-bottom:1px solid #e8edf5;padding:16px 0;font-size:20px}
-    .price-row strong:last-child{color:var(--blue);font-size:24px}
-    .delivery{background:var(--orange);color:white;border-radius:28px;padding:32px;text-align:center}
-    .delivery strong{font-size:72px;display:block;line-height:1}
-    details{background:white;border:1px solid #e8edf5;border-radius:18px;padding:18px 22px;margin-bottom:12px}
-    summary{font-weight:800;color:var(--blue);cursor:pointer}
-    .contact{background:var(--blue);color:white;border-radius:32px;padding:46px;text-align:center}
-    .contact h2{color:white}
-    .contact p{color:#dce6ff}
-    footer{padding:35px 24px;text-align:center;color:var(--muted)}
-    @media(max-width:850px){
-      .hero,.prices,.castles{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr 1fr}
-      h1{font-size:40px}
-      .nav{flex-direction:column;gap:14px}
-    }
-    @media(max-width:520px){
-      .grid{grid-template-columns:1fr}
-      h1{font-size:34px}
-      section,.hero{padding:50px 18px}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B1 Hüpfburgen | Hüpfburgenverleih Leverkusen</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f7fa;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#002b7f,#0066ff);
+padding:70px 20px;
+text-align:center;
+color:white;
+}
+
+header h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+header p{
+font-size:24px;
+margin-bottom:35px;
+}
+
+.button{
+display:inline-block;
+background:#ff7b00;
+color:white;
+padding:18px 40px;
+text-decoration:none;
+border-radius:40px;
+font-size:22px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.button:hover{
+background:#ff9800;
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+font-size:40px;
+color:#002b7f;
+text-align:center;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card h3{
+color:#002b7f;
+}
+
+.price{
+font-size:50px;
+color:#ff7b00;
+font-weight:bold;
+margin-top:15px;
+}
+
+footer{
+background:#002b7f;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
-  <div class="nav">
-    <div class="brand">B1 Hüpfburgen</div>
-    <nav>
-      <a href="#huepfburgen">Hüpfburgen</a>
-      <a href="#preise">Preise</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn" href="mailto:B1huepfburgen@outlook.de?subject=Anfrage%20H%C3%BCpfburg">Jetzt anfragen</a>
-    </nav>
-  </div>
+
+<h1>B1 Hüpfburgen</h1>
+
+<p>Hüpfburgen für unvergessliche Momente.</p>
+
+<a class="button" href="#kontakt">
+Jetzt anfragen
+</a>
+
 </header>
 
-<main>
-  <div class="hero">
-    <div>
-      <div class="tag">Leverkusen & Umgebung</div>
-      <h1>Hüpfburgen für unvergessliche Momente</h1>
-      <p>Hochwertige Hüpfburgen für Kindergeburtstage, Familienfeiern, Vereinsfeste und Events im Raum Leverkusen und Umgebung. Sauber, sicher und zuverlässig.</p>
-      <br><br>
-      <a class="btn" href="mailto:B1huepfburgen@outlook.de?subject=Anfrage%20H%C3%BCpfburg">🎈 Jetzt unverbindlich anfragen</a>
-    </div>
-    <div class="hero-card">
-      <div>🏰</div>
-      <h2>B1 Hüpfburgen</h2>
-      <p>Originalfotos unserer Hüpfburgen folgen in Kürze.</p>
-    </div>
-  </div>
+<section>
 
-  <section>
-    <div class="grid">
-      <div class="card"><span>🛡️</span><h3>Sicher & geprüft</h3><p>Unsere Hüpfburgen werden sorgfältig vorbereitet und kontrolliert.</p></div>
-      <div class="card"><span>✨</span><h3>Sauber & gepflegt</h3><p>Nach jeder Nutzung werden die Hüpfburgen gereinigt und geprüft.</p></div>
-      <div class="card"><span>🚚</span><h3>Lieferung & Abholung</h3><p>Bequemer Service im Raum Leverkusen und Umgebung.</p></div>
-      <div class="card"><span>💶</span><h3>Faire Preise</h3><p>Transparente Mietpreise ohne versteckte Kosten.</p></div>
-    </div>
-  </section>
+<h2>Unsere Leistungen</h2>
 
-  <section class="soft" id="huepfburgen">
-    <div class="inner">
-      <h2>Unsere Hüpfburgen</h2>
-      <div class="castles">
-        <div class="castle">
-          <div class="placeholder">🐾</div>
-          <h3>Paw Patrol Hüpfburg</h3>
-          <p>Ideal für Kindergeburtstage und kleine Abenteurer. Originalbilder folgen in Kürze.</p>
-        </div>
-        <div class="castle">
-          <div class="placeholder">❄️</div>
-          <h3>Frozen Hüpfburg</h3>
-          <p>Perfekt für Motto-Geburtstage und kleine Eisprinzessinnen. Originalbilder folgen in Kürze.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="cards">
 
-  <section id="preise">
-    <h2>Preisliste 2026</h2>
-    <div class="prices">
-      <div class="card">
-        <div class="price-row"><strong>Montag – Donnerstag</strong><strong>89 €</strong></div>
-        <div class="price-row"><strong>Freitag</strong><strong>109 €</strong></div>
-        <div class="price-row"><strong>Samstag</strong><strong>119 €</strong></div>
-        <div class="price-row"><strong>Sonntag</strong><strong>109 €</strong></div>
-        <div class="price-row"><strong>Freitag bis Sonntag</strong><strong>139 €</strong></div>
-        <div class="price-row"><strong>Freitag bis Montag</strong><strong>149 €</strong></div>
-        <p style="margin-top:18px;color:var(--muted)">Kaution: 100 € pro Hüpfburg.</p>
-      </div>
-      <div class="delivery">
-        <h3>Liefer- & Abholservice</h3>
-        <strong>30 €</strong>
-        <p>pauschal bis 15 km</p>
-        <br>
-        <p>Ab 16 km berechnen wir 2 € pro zusätzlichem Kilometer.</p>
-      </div>
-    </div>
-  </section>
+<div class="card">
+<h3>Kindergeburtstage</h3>
+<p>Die perfekte Überraschung für kleine Gäste.</p> </div>
 
-  <section class="soft">
-    <div class="inner">
-      <h2>Liefergebiet</h2>
-      <p>Wir liefern nach Absprache unter anderem nach Leverkusen, Köln, Langenfeld, Leichlingen, Monheim, Bergisch Gladbach, Odenthal und Umgebung.</p>
-    </div>
-  </section>
+<div class="card">
+<h3>Familienfeiern</h3>
+<p>Spiel und Spaß für jedes Alter.</p>
+</div>
 
-  <section id="faq">
-    <h2>Häufige Fragen</h2>
-    <details open><summary>Wer baut die Hüpfburg auf?</summary><p>Der Aufbau erfolgt durch den Mieter gemäß Aufbauanleitung und Einweisung.</p></details>
-    <details><summary>Ist eine Unterlegplane dabei?</summary><p>Ja, jede Hüpfburg wird mit passender Unterlegplane vermietet.</p></details>
-    <details><summary>Wie wird die Hüpfburg gesichert?</summary><p>Die Hüpfburg muss mit den mitgelieferten Heringen an allen vorgesehenen Befestigungspunkten gesichert werden.</p></details>
-    <details><summary>Was passiert bei amtlicher Unwetterwarnung?</summary><p>Bei amtlichen Unwetterwarnungen ist eine kostenlose Stornierung bis Mietbeginn möglich.</p></details>
-    <details><summary>Wie muss die Hüpfburg zurückgegeben werden?</summary><p>Die Hüpfburg muss besenrein und trocken zurückgegeben werden.</p></details>
-  </section>
+<div class="card">
+<h3>Firmenevents</h3>
+<p>Professioneller Hüpfburgenverleih für Veranstaltungen.</p> </div>
 
-  <section>
-    <div class="contact">
-      <h2>Jetzt unverbindlich anfragen</h2>
-      <p>Schreib uns deinen Wunschtermin, den Veranstaltungsort und welche Hüpfburg du mieten möchtest.</p>
-      <br>
-      <a class="btn" href="mailto:B1huepfburgen@outlook.de?subject=Anfrage%20H%C3%BCpfburg">B1huepfburgen@outlook.de</a>
-      <br><br>
-      <p>Instagram: @b1_huepfburgen_leverkusen</p>
-      <p>Kleinanzeigen: B1 Hüpfburgen</p>
-    </div>
-  </section>
-</main>
+</div>
+
+</section>
+
+<section>
+
+<h2>Preise</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Hüpfburgen-Verleih</h3>
+
+<p>inklusive Reinigung und Einweisung</p>
+
+<div class="price">
+ab 79 €
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Liefergebiet</h2>
+
+<p style="text-align:center;font-size:24px;max-width:800px;margin:auto;line-height:1.8;">
+
+Wir liefern zuverlässig nach
+
+<strong>Leverkusen, Köln, Bergisch Gladbach, Langenfeld, Monheim, Dormagen und Umgebung.</strong>
+
+</p>
+
+</section>
+
+<section id="kontakt">
+
+<h2>Kontakt</h2>
+
+<div class="card">
+
+<h3>B1 Hüpfburgen</h3>
+
+<p>
+
+📍 Leverkusen & Umgebung
+
+</p>
+
+<p>
+
+📞 Telefon: nach Vereinbarung
+
+</p>
+
+<p>
+
+📧 E-Mail: info@b1-huepfburgen.de
+
+</p>
+
+<a class="button" href="mailto:info@b1-huepfburgen.de">
+
+Jetzt unverbindlich anfragen
+
+</a>
+
+</div>
+
+</section>
 
 <footer>
-  <strong>B1 Hüpfburgen</strong><br>
-  Hüpfburgverleih in Leverkusen & Umgebung </footer>
+
+<h3>B1 Hüpfburgen</h3>
+
+<p>
+
+Hüpfburgen für unvergessliche Momente.
+
+</p>
+
+<p>
+
+© 2026 B1 Hüpfburgen
+
+</p>
+
+</footer>
 
 </body>
+
 </html>
