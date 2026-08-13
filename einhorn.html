@@ -108,6 +108,134 @@ footer{margin-top:42px;background:linear-gradient(135deg,#031536,#08275b);color:
   .accessory-item strong{font-size:15px;line-height:1.3}
 }
 
+
+
+/* Laufbalken wie auf der Startseite */
+.ticker-track{
+  display:inline-flex !important;
+  align-items:center;
+  width:max-content;
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:.035em;
+  animation:ticker 42s linear infinite;
+}
+.ticker-sequence{display:inline-flex;align-items:center;gap:22px;padding:0 18px}
+.ticker-sequence > span:not(.ticker-logo){margin:0}
+.ticker-logo{
+  width:38px;height:32px;display:inline-flex;align-items:center;justify-content:center;
+  flex:0 0 auto;overflow:visible;background:transparent;
+}
+.ticker-logo img{
+  width:46px;height:32px;object-fit:contain;display:block;background:transparent;
+}
+
+
+/* Einheitliche interaktive Navigation und Buttons */
+.nav-logo,
+.nav-links a:not(.btn),
+.btn,
+.legal-links a,
+.contact-row a,
+.back-link{
+  transition:background-color .22s ease,color .22s ease,border-color .22s ease,
+             box-shadow .22s ease,transform .22s ease;
+}
+.nav-logo,
+.nav-links a:not(.btn){
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:9px 13px;border:1px solid rgba(6,31,79,.16);
+  border-radius:10px;background:#fff;
+}
+.nav-logo:hover,
+.nav-links a:not(.btn):hover{
+  background:var(--blue);color:#fff;border-color:var(--blue);
+  transform:translateY(-1px);box-shadow:0 8px 18px rgba(6,31,79,.14);
+}
+.btn{
+  border:2px solid transparent;
+}
+.btn:hover{
+  background:var(--blue) !important;color:#fff;border-color:var(--blue);
+  transform:translateY(-2px);box-shadow:0 16px 30px rgba(6,31,79,.22);
+}
+.legal-links a{
+  padding:7px 10px;border:1px solid rgba(255,255,255,.28);
+  border-radius:9px;text-decoration:none !important;
+}
+.legal-links a:hover{
+  background:#fff;color:var(--blue);border-color:#fff;transform:translateY(-1px);
+}
+.contact-row a{
+  padding:8px 10px;border:1px solid rgba(255,255,255,.18);border-radius:12px;
+}
+.contact-row a:hover{
+  background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.45);
+  transform:translateY(-1px);
+}
+a:focus-visible{outline:3px solid rgba(255,111,0,.42);outline-offset:3px}
+
+
+/* Saubere Smartphone-Navigation: alle Tasten sichtbar und ordentlich angeordnet */
+@media(max-width:620px){
+  .ticker-track{font-size:13px}
+  .ticker-sequence{gap:14px;padding:0 12px}
+  .ticker-logo{width:32px;height:27px}
+  .ticker-logo img{width:39px;height:27px}
+
+  .nav-inner{
+    height:auto !important;
+    min-height:74px;
+    padding-top:12px;
+    padding-bottom:12px;
+    flex-direction:column;
+    gap:10px;
+  }
+  .nav-logo{
+    width:100%;
+    max-width:360px;
+    padding:10px 14px;
+  }
+  .nav-links{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    width:100%;
+    max-width:420px;
+    gap:9px !important;
+  }
+  .nav-links a{
+    min-height:44px;
+    width:100%;
+    padding:10px 8px !important;
+    text-align:center;
+    justify-content:center;
+    line-height:1.15;
+    font-size:13px;
+    border-radius:10px;
+  }
+  .nav-links .btn{
+    grid-column:1 / -1;
+    min-height:48px;
+    border-radius:12px;
+  }
+  .quick-wa .btn{
+    width:100%;
+    max-width:390px;
+    justify-content:center;
+    text-align:center;
+    padding:13px 16px;
+  }
+  footer .btn{
+    width:min(100%,390px);
+    justify-content:center;
+    text-align:center;
+  }
+}
+@media(hover:none){
+  .nav-logo:hover,.nav-links a:not(.btn):hover,.btn:hover,
+  .legal-links a:hover,.contact-row a:hover{transform:none}
+}
+
 </style>
 
 <style>
@@ -202,7 +330,25 @@ footer{margin-top:42px;background:linear-gradient(135deg,#031536,#08275b);color:
 </head>
 <body>
 
-<div class="ticker"><div class="ticker-track"><span>SICHER & GEPRÜFT</span><i>•</i><span>SAUBER & GEPFLEGT</span><i>•</i><span>FAIR & ZUVERLÄSSIG</span><i>•</i><span>LIEFER- & ABHOLSERVICE</span><i>•</i><span>SICHER & GEPRÜFT</span><i>•</i><span>SAUBER & GEPFLEGT</span><i>•</i><span>FAIR & ZUVERLÄSSIG</span><i>•</i><span>LIEFER- & ABHOLSERVICE</span><i>•</i></div></div>
+<div class="ticker"><div class="ticker-track"><span class="ticker-sequence">
+  <span>B1 HÜPFBURGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>IHR ZUVERLÄSSIGER VERLEIHER AUS LEVERKUSEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>JETZT UNKOMPLIZIERT PER WHATSAPP ANFRAGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>SAUBER, SICHER UND NACH DIN EN 14960 ZERTIFIZIERT</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+</span><span class="ticker-sequence">
+  <span>B1 HÜPFBURGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>IHR ZUVERLÄSSIGER VERLEIHER AUS LEVERKUSEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>JETZT UNKOMPLIZIERT PER WHATSAPP ANFRAGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>SAUBER, SICHER UND NACH DIN EN 14960 ZERTIFIZIERT</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+</span></div></div>
 
 <nav class="nav"><div class="wrap nav-inner">
 <a class="nav-logo" href="index.html">B1 Hüpfburgen</a>
