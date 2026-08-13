@@ -271,6 +271,28 @@ a:focus-visible{
   }
 }
 
+
+/* Einhorn-Kachel: Bild füllt den Bereich besser aus, bleibt aber vollständig sichtbar */
+.einhorn-visual{
+  background:#fff;
+  padding:0 !important;
+}
+.einhorn-visual img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:0 !important;
+  margin:0 !important;
+  transform:scale(1.06);
+  transform-origin:center;
+}
+@media(max-width:620px){
+  .einhorn-visual img{
+    transform:scale(1.03);
+  }
+}
+
 </style>
 </head>
 <body>
