@@ -24,26 +24,29 @@ a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:0 auto;paddin
 .ticker-sequence{display:inline-flex;align-items:center;gap:22px;padding:0 18px}
 .ticker-sequence > span:not(.ticker-logo){margin:0}
 .ticker-logo{
-  width:34px;
-  height:30px;
+  width:38px;
+  height:32px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
   flex:0 0 auto;
-  overflow:hidden;
+  overflow:visible;
+  background:transparent;
 }
 .ticker-logo img{
   width:46px;
-  height:34px;
+  height:32px;
   object-fit:contain;
   display:block;
-  mix-blend-mode:screen;
+  background:transparent;
+  mix-blend-mode:multiply;
+  filter:none;
 }
 @media(max-width:620px){
   .ticker-track{font-size:13px}
   .ticker-sequence{gap:14px;padding:0 12px}
-  .ticker-logo{width:29px;height:26px}
-  .ticker-logo img{width:40px;height:30px}
+  .ticker-logo{width:32px;height:27px}
+  .ticker-logo img{width:39px;height:27px}
 }
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .nav{border-bottom:1px solid var(--line);background:white}
