@@ -164,6 +164,113 @@ footer{margin-top:42px;background:linear-gradient(135deg,#031536,#08275b);color:
   .availability-ribbon{font-size:14px;padding:8px 6px;width:120%}
 }
 
+
+/* Einheitlicher Look für anklickbare Elemente */
+.nav-logo,
+.nav-links a:not(.btn),
+.detail-btn,
+.btn,
+.legal-links a,
+.contact-row a{
+  transition:background-color .22s ease,color .22s ease,border-color .22s ease,
+             box-shadow .22s ease,transform .22s ease;
+}
+
+.nav-logo,
+.nav-links a:not(.btn){
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:9px 13px;
+  border:1px solid rgba(6,31,79,.16);
+  border-radius:10px;
+  background:#fff;
+}
+.nav-logo:hover,
+.nav-links a:not(.btn):hover{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(6,31,79,.14);
+}
+
+.btn{
+  border:2px solid transparent;
+}
+.btn:hover{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+  transform:translateY(-2px);
+  box-shadow:0 16px 30px rgba(6,31,79,.22);
+}
+
+.detail-btn{
+  border:2px solid var(--orange);
+  box-shadow:0 5px 12px rgba(255,111,0,.16);
+}
+.detail-btn:hover{
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 10px 22px rgba(6,31,79,.18);
+}
+
+.product:has(.detail-btn){
+  transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease;
+}
+.product:has(.detail-btn):hover{
+  border-color:rgba(255,111,0,.7);
+  box-shadow:0 22px 48px rgba(6,31,79,.16);
+  transform:translateY(-4px);
+}
+
+.legal-links a{
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:9px;
+  text-decoration:none;
+}
+.legal-links a:hover{
+  background:#fff;
+  color:var(--blue);
+  border-color:#fff;
+  transform:translateY(-1px);
+}
+.contact-row a{
+  padding:8px 10px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:12px;
+}
+.contact-row a:hover{
+  background:rgba(255,255,255,.10);
+  border-color:rgba(255,255,255,.45);
+  transform:translateY(-1px);
+}
+
+a:focus-visible{
+  outline:3px solid rgba(255,111,0,.42);
+  outline-offset:3px;
+}
+
+@media(max-width:620px){
+  .nav-logo{padding:8px 11px}
+  .btn,.detail-btn{box-shadow:none}
+}
+@media(hover:none){
+  .nav-logo:hover,
+  .nav-links a:not(.btn):hover,
+  .btn:hover,
+  .detail-btn:hover,
+  .product:has(.detail-btn):hover,
+  .legal-links a:hover,
+  .contact-row a:hover{
+    transform:none;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -200,13 +307,13 @@ footer{margin-top:42px;background:linear-gradient(135deg,#031536,#08275b);color:
 
 <article class="card product">
 <h3>Paw Patrol</h3><div class="visual"><div class="castle"></div><div class="availability-ribbon">Ab 01.09.2026 verfügbar</div></div>
-<ul class="specs"><li>📏 <span>4 × 4 × 3,3 m</span></li><li>👧 <span>ab 3 Jahren</span></li><li>👥 <span>max. 8 Kinder</span></li></ul>
+<ul class="specs"><li>📏 <span>4 × 4 × 3,3 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
 <div class="product-bottom"><div class="price"><small>ab</small> <strong>89 €</strong></div><a class="detail-btn" href="paw-patrol.html">MEHR ERFAHREN</a></div>
 </article>
 
 <article class="card product">
 <h3>Frozen</h3><div class="visual"><div class="castle frozen"></div><div class="availability-ribbon">Ab 01.09.2026 verfügbar</div></div>
-<ul class="specs"><li>📏 <span>4 × 4 × 3,5 m</span></li><li>👧 <span>ab 3 Jahren</span></li><li>👥 <span>max. 8 Kinder</span></li></ul>
+<ul class="specs"><li>📏 <span>4 × 4 × 3,5 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
 <div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div><a class="detail-btn" href="frozen.html">MEHR ERFAHREN</a></div>
 </article>
 
