@@ -265,6 +265,68 @@ a:focus-visible{outline:3px solid rgba(255,111,0,.42);outline-offset:3px}
   .legal-links a:hover,.contact-row a:hover{transform:none}
 }
 
+
+/* Kompakte Smartphone-Navigation: eine schmale horizontale Leiste */
+@media(max-width:620px){
+  .nav{
+    overflow:hidden;
+  }
+  .nav-inner{
+    height:auto !important;
+    min-height:0 !important;
+    padding:8px 12px !important;
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:8px !important;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  .nav-inner::-webkit-scrollbar{display:none}
+
+  .nav-logo{
+    width:auto !important;
+    max-width:none !important;
+    flex:0 0 auto;
+    min-height:36px;
+    padding:7px 10px !important;
+    font-size:12px;
+    border-radius:9px;
+    white-space:nowrap;
+  }
+
+  .nav-links{
+    display:flex !important;
+    flex-direction:row !important;
+    grid-template-columns:none !important;
+    width:auto !important;
+    max-width:none !important;
+    gap:8px !important;
+    flex:0 0 auto;
+  }
+
+  .nav-links a:not(.btn){
+    width:auto !important;
+    min-height:36px !important;
+    padding:7px 10px !important;
+    font-size:12px !important;
+    border-radius:9px !important;
+    white-space:nowrap;
+  }
+
+  /* WhatsApp oben ausblenden – dafür bleiben die großen WhatsApp-Buttons im Inhalt */
+  .nav-links .btn{
+    display:none !important;
+  }
+
+  /* Video/Medienbereich rückt näher an die Navigation */
+  .detail-hero{
+    padding-top:12px !important;
+  }
+}
+
 </style>
 
 <style>
