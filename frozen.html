@@ -327,6 +327,16 @@ a:focus-visible{outline:3px solid rgba(255,111,0,.42);outline-offset:3px}
   }
 }
 
+
+/* Kein orangener Deko-Streifen im Kautionsfeld */
+.deposit h3::after,
+.kaution h3::after,
+[class*="deposit"] h3::after,
+[class*="kaution"] h3::after{
+  display:none !important;
+  content:none !important;
+}
+
 </style>
 
 <style>
@@ -553,7 +563,7 @@ a:focus-visible{outline:3px solid rgba(255,111,0,.42);outline-offset:3px}
 </div>
 
 <div class="notice-grid">
-<div class="card block center"><h3>Kaution</h3><p style="font-size:38px;font-weight:900;color:var(--orange)">100 €</p></div>
+<div class="card block center kaution"><h3>Kaution</h3><p style="font-size:38px;font-weight:900;color:var(--orange)">100 €</p></div>
 <div class="card delivery"><div class="delivery-head">🚚 LIEFERUNG</div><div class="delivery-content"><div class="big-price">50<small> €</small></div><div class="pauschal">BIS 15 KM</div><div class="orange-note">Weitere Entfernungen nur auf Anfrage.</div></div></div>
 </div>
 
