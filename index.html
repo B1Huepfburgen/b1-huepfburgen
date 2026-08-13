@@ -293,6 +293,39 @@ a:focus-visible{
   }
 }
 
+
+.hero-welcome{
+  color:var(--blue);
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin:0 auto 16px;
+}
+.einhorn-visual{
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#fff !important;
+}
+.einhorn-visual img{
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  padding:0 !important;
+  margin:0 !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  transform:none !important;
+  display:block !important;
+}
+@media(max-width:620px){
+  .hero-welcome{
+    font-size:12px;
+    letter-spacing:.09em;
+    margin-bottom:12px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -319,6 +352,7 @@ a:focus-visible{
 
 <header class="hero">
   <div class="wrap">
+    <div class="hero-welcome">WILLKOMMEN BEI B1 HÜPFBURGEN</div>
     <div class="logo"><img src="logo.jpeg" alt="B1 Hüpfburgen Logo"></div>
     <a class="btn" href="https://wa.me/4915114337536?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20eine%20H%C3%BCpfburg%20bei%20B1%20H%C3%BCpfburgen%20anfragen." target="_blank" rel="noopener">JETZT PER WHATSAPP ANFRAGEN</a>
   </div>
