@@ -376,6 +376,68 @@ a:focus-visible{
   }
 }
 
+
+/* Einheitliche Produktbild-Kacheln */
+.visual,
+.product-photo,
+.einhorn-visual{
+  height:190px !important;
+  border-radius:18px !important;
+  overflow:hidden !important;
+  background:#f7f8fb !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.visual img,
+.product-photo img,
+.einhorn-visual img{
+  width:100% !important;
+  height:100% !important;
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  border-radius:0 !important;
+  transform-origin:center center !important;
+}
+
+/* Feintuning je Motiv */
+.paw-photo img{
+  transform:scale(1.03);
+}
+.frozen-photo img{
+  transform:scale(1.02);
+}
+.eiswagen-photo img{
+  transform:scale(.96);
+}
+.tank-photo img{
+  transform:scale(.97);
+}
+.einhorn-visual img{
+  transform:scale(1.00);
+}
+
+/* Smartphone: gleiche Bildsprache, etwas mehr Höhe */
+@media(max-width:620px){
+  .visual,
+  .product-photo,
+  .einhorn-visual{
+    height:215px !important;
+    border-radius:16px !important;
+  }
+
+  .paw-photo img{transform:scale(1.00);}
+  .frozen-photo img{transform:scale(1.00);}
+  .eiswagen-photo img{transform:scale(.94);}
+  .tank-photo img{transform:scale(.95);}
+  .einhorn-visual img{transform:scale(.98);}
+}
+
 </style>
 </head>
 <body>
