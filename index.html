@@ -345,6 +345,37 @@ a:focus-visible{
   }
 }
 
+
+/* Kachelbilder: sauber auf Desktop und Smartphone */
+.product-photo{
+  background:#fff !important;
+  padding:0 !important;
+  overflow:hidden !important;
+}
+.product-photo img{
+  width:100% !important;
+  height:100% !important;
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+}
+@media(min-width:621px){
+  .paw-photo img{object-fit:cover !important}
+  .frozen-photo img,
+  .eiswagen-photo img,
+  .tank-photo img{object-fit:contain !important}
+}
+@media(max-width:620px){
+  .product-photo{height:190px !important}
+  .product-photo img{
+    object-fit:contain !important;
+    object-position:center center !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -381,13 +412,13 @@ a:focus-visible{
 <section id="produkte"><div class="wrap"><div class="section-title"><h2>Unsere Hüpfburgen</h2></div><div class="products">
 
 <article class="card product">
-<h3>Paw Patrol</h3><div class="visual"><div class="castle"></div><div class="availability-ribbon">Ab 01.09.2026 verfügbar</div></div>
+<h3>Paw Patrol</h3><div class="visual product-photo paw-photo"><img src="paw-patrol-kachel.jpg" alt="Paw Patrol Hüpfburg"><div class="availability-ribbon">Ab 01.09.2026 verfügbar</div></div>
 <ul class="specs"><li>📏 <span>4 × 4 × 3,3 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
 <div class="product-bottom"><div class="price"><small>ab</small> <strong>89 €</strong></div><a class="detail-btn" href="paw-patrol.html">MEHR ERFAHREN</a></div>
 </article>
 
 <article class="card product">
-<h3>Frozen</h3><div class="visual"><div class="castle frozen"></div><div class="availability-ribbon">Ab 01.09.2026 verfügbar</div></div>
+<h3>Frozen</h3><div class="visual product-photo frozen-photo"><img src="frozen-kachel.jpg" alt="Frozen Hüpfburg"><div class="availability-ribbon">Ab 01.09.2026 verfügbar</div></div>
 <ul class="specs"><li>📏 <span>4 × 4 × 3,5 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
 <div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div><a class="detail-btn" href="frozen.html">MEHR ERFAHREN</a></div>
 </article>
@@ -400,14 +431,14 @@ a:focus-visible{
 
 <article class="card product coming">
 <h3>B1 Tanklöschfahrzeug</h3>
-<div class="visual"><div class="castle placeholder"></div><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
+<div class="visual product-photo tank-photo"><img src="tankloeschfahrzeug-kachel.jpg" alt="B1 Tanklöschfahrzeug"><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
 <ul class="specs"><li>📏 <span>7 × 3,5 × 3,5 m</span></li><li>🚒 <span>Bilder &amp; Details folgen</span></li></ul>
 <div class="product-bottom"><div class="price"><small>ab</small> <strong>149 €</strong></div></div>
 </article>
 
 <article class="card product coming">
 <h3>B1 Eiswagen</h3>
-<div class="visual"><div class="castle placeholder"></div><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
+<div class="visual product-photo eiswagen-photo"><img src="eiswagen-kachel.jpg" alt="B1 Eiswagen"><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
 <ul class="specs"><li>📏 <span>5 × 3 × 3,5 m</span></li><li>🍦 <span>Bilder &amp; Details folgen</span></li></ul>
 <div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div></div>
 </article>
