@@ -438,6 +438,114 @@ a:focus-visible{
   .einhorn-visual img{transform:scale(.98);}
 }
 
+
+/* Größere, einheitliche Produktkacheln: Desktop immer 2 nebeneinander */
+.products{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:28px !important;
+  align-items:stretch;
+}
+
+.product{
+  min-height:560px !important;
+  padding:26px !important;
+}
+
+.product h3{
+  font-size:24px !important;
+  line-height:1.2 !important;
+  min-height:34px;
+  margin-bottom:18px !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  white-space:nowrap;
+}
+
+/* Letzte einzelne Kachel mittig ausrichten */
+.products .product:last-child:nth-child(odd){
+  grid-column:1 / -1;
+  width:calc(50% - 14px);
+  justify-self:center;
+}
+
+.visual,
+.product-photo,
+.einhorn-visual{
+  height:300px !important;
+  border-radius:20px !important;
+}
+
+.product-bottom{
+  margin-top:auto !important;
+}
+
+.product-bottom .price strong{
+  font-size:30px !important;
+}
+
+.detail-btn{
+  padding:12px 18px !important;
+  font-size:15px !important;
+}
+
+/* Tablet */
+@media(max-width:900px){
+  .products{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:20px !important;
+  }
+  .product{
+    min-height:520px !important;
+    padding:22px !important;
+  }
+  .product h3{
+    font-size:20px !important;
+  }
+  .visual,
+  .product-photo,
+  .einhorn-visual{
+    height:240px !important;
+  }
+}
+
+/* Smartphone: eine große Kachel pro Zeile */
+@media(max-width:700px){
+  .products{
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+  }
+  .products .product:last-child:nth-child(odd){
+    grid-column:auto;
+    width:100%;
+  }
+  .product{
+    min-height:0 !important;
+    padding:18px !important;
+  }
+  .product h3{
+    font-size:21px !important;
+    min-height:0;
+    white-space:normal;
+    margin-bottom:14px !important;
+  }
+  .visual,
+  .product-photo,
+  .einhorn-visual{
+    height:245px !important;
+    border-radius:18px !important;
+  }
+  .product-bottom{
+    gap:10px !important;
+  }
+  .detail-btn{
+    padding:11px 14px !important;
+    font-size:14px !important;
+  }
+}
+
 </style>
 </head>
 <body>
