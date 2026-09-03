@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B1 Hüpfburgen | Hüpfburg mieten in Leverkusen & Umgebung</title>
+<meta name="description" content="B1 Hüpfburgen vermietet Hüpfburgen für Kindergeburtstage, Familienfeiern und Events im Raum Leverkusen & Umgebung.">
+<style>
+:root{--blue:#061f4f;--orange:#ff6f00;--orange2:#ff9b24;--soft:#f7f8fb;--line:#e5eaf2;--muted:#5f6d82;--shadow:0 18px 46px rgba(6,31,79,.12);--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--blue);line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.ticker{height:46px;background:var(--blue);color:#fff;overflow:hidden;white-space:nowrap;display:flex;align-items:center}
+.ticker-track{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:.035em;
+  animation:ticker 42s linear infinite
+}
+.ticker-sequence{display:inline-flex;align-items:center;gap:22px;padding:0 18px}
+.ticker-sequence > span:not(.ticker-logo){margin:0}
+.ticker-logo{
+  width:38px;
+  height:32px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  overflow:visible;
+  background:transparent;
+}
+.ticker-logo img{
+  width:46px;
+  height:32px;
+  object-fit:contain;
+  display:block;
+  background:transparent;
+  mix-blend-mode:normal;
+  filter:none;
+}
+@media(max-width:620px){
+  .ticker-track{font-size:13px}
+  .ticker-sequence{gap:14px;padding:0 12px}
+  .ticker-logo{width:32px;height:27px}
+  .ticker-logo img{width:39px;height:27px}
+}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.nav{border-bottom:1px solid var(--line);background:white}
+.nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-weight:900;color:var(--blue)}.nav-links{display:flex;gap:22px;align-items:center;font-weight:900}
+.btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--orange),var(--orange2));color:white;border-radius:999px;padding:14px 24px;font-weight:900;box-shadow:0 14px 30px rgba(255,111,0,.25)}
+.hero{
+      max-width:1180px;
+      margin:0 auto;
+      padding:72px 22px 56px;
+      text-align:center;
+      background:transparent;
+      border:0;
+      border-radius:0;
+      box-shadow:none;
+    }
+.logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin:12px auto 42px;
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  overflow:visible;
+}
+.logo img{
+  width:min(470px,78vw);
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:0;
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  mix-blend-mode:normal;
+  filter:drop-shadow(0 12px 18px rgba(6,31,79,.16));
+}
+@media(max-width:620px){
+  .logo{margin:8px auto 30px}
+  .logo img{width:min(360px,82vw)}
+}
+section{padding:54px 0}.section-title{text-align:center;margin-bottom:30px}.kicker{color:var(--orange);font-size:14px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+h1{font-size:44px;line-height:1.1;margin-bottom:14px}h2{font-size:34px;line-height:1.15;color:var(--blue)}h3{color:var(--blue)}
+.lead{color:var(--muted);font-size:18px;max-width:760px;margin:10px auto 0}
+.section-title:after{content:"";display:block;width:42px;height:3px;background:var(--orange);border-radius:8px;margin:10px auto 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product{padding:22px;overflow:hidden;min-height:410px;display:flex;flex-direction:column}.product h3{text-align:center;font-size:22px;margin-bottom:16px}
+.visual{height:184px;border-radius:18px;background:linear-gradient(135deg,#f0f6ff,#fff6ec);display:flex;align-items:center;justify-content:center;margin-bottom:18px;overflow:hidden}
+.visual img{width:100%;height:100%;object-fit:cover}.einhorn-visual{background:linear-gradient(135deg,#f7f9fc,#fff)}.einhorn-visual img{object-fit:contain;object-position:center;padding:8px}
+.castle{width:190px;height:122px;background:linear-gradient(135deg,#0a70e7,#052f78);border-radius:26px;position:relative;box-shadow:inset 0 -16px 0 rgba(0,0,0,.10)}
+.castle:before{content:"";position:absolute;left:27%;right:27%;bottom:0;height:66%;background:#ff3131;border:7px solid #ffc12b;border-radius:28px 28px 0 0}
+.castle:after{content:"";position:absolute;left:50%;bottom:-23px;width:72%;height:45px;background:#116fe2;border-radius:17px;transform:translateX(-50%)}
+.castle.frozen{background:linear-gradient(135deg,#94e8ff,#126ad2)}.castle.frozen:before{background:#bff3ff;border-color:#fff}
+.castle.placeholder{opacity:.26;filter:grayscale(1);background:#9aaabd}.castle.placeholder:before{background:#9aaabd;border-color:#9aaabd}
+.specs{list-style:none;margin:0 0 18px;color:#142c61;font-size:15px}.specs li{display:flex;gap:10px;margin:8px 0}
+.product-bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.price{font-weight:900;color:var(--blue)}.price small{font-size:14px}.price strong{font-size:32px}
+.detail-btn{background:var(--orange);color:white;border-radius:10px;padding:10px 15px;font-size:14px;font-weight:900}.coming{text-align:center;justify-content:flex-start}.coming .visual{background:linear-gradient(135deg,#f8f9fc,#eef2f7)}.coming p{font-size:20px;color:var(--blue);margin-top:10px}
+.info-grid{display:grid;grid-template-columns:.9fr .95fr 1.25fr;gap:22px;align-items:stretch}.block{padding:26px}.block h3{font-size:26px;margin-bottom:22px}.block h3:after{content:"";display:block;width:42px;height:3px;background:var(--orange);margin-top:8px;border-radius:8px}
+.checklist{list-style:none}.checklist li{margin:16px 0;display:flex;align-items:flex-start;gap:12px;color:#152d61}.check{width:22px;height:22px;border-radius:50%;background:var(--orange);color:white;display:inline-flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;flex:0 0 auto}
+.delivery{border:0;background:linear-gradient(180deg,#fff 0,#fffaf3 100%);overflow:hidden;padding:0}.delivery-head{background:linear-gradient(135deg,var(--orange),var(--orange2));color:white;padding:22px;text-align:center;font-size:25px;line-height:1.1;font-weight:900}.delivery-content{padding:26px}.big-price{text-align:center;color:var(--orange);font-size:84px;font-weight:900;line-height:.9}.big-price small{font-size:38px}.pauschal{text-align:center;color:var(--orange);font-size:28px;font-weight:900;line-height:1.08;margin:12px 0 22px}.orange-note{margin-top:20px;background:linear-gradient(135deg,var(--orange),var(--orange2));color:white;border-radius:14px;padding:18px;text-align:center;font-weight:800}
+.map-visual{height:360px;position:relative;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#f7fcff,#fff)}.map-visual:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 16%,#dfe9d7 0 17px,transparent 18px),radial-gradient(circle at 92% 24%,#dfe9d7 0 16px,transparent 17px),radial-gradient(circle at 86% 85%,#dfe9d7 0 20px,transparent 21px),linear-gradient(110deg,transparent 45%,rgba(87,173,220,.26) 46%,rgba(87,173,220,.26) 49%,transparent 50%)}
+.place{position:absolute;transform:translate(-50%,-50%);text-align:center;font-size:13px;font-weight:900;color:var(--blue);line-height:1.15}.place .mini{display:block;font-size:32px;line-height:1}.place.main{font-size:22px}.place.main .mini{font-size:50px}.map p{text-align:center;margin-top:16px;color:#132b5d}
+.data-table{width:100%;border-collapse:collapse}.data-table td{padding:14px;border-bottom:1px solid var(--line)}.data-table td:first-child{font-weight:900}
+footer{margin-top:42px;background:linear-gradient(135deg,#031536,#08275b);color:white;text-align:center;padding:38px 0 22px}footer h2{color:white;font-size:28px;margin-bottom:8px}.contact-row{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:28px;border-bottom:1px solid rgba(255,255,255,.18);padding:24px 0}.contact-row a,.contact-row span{font-weight:900;color:white}.contact-icon{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--orange);margin-right:10px}.love{padding-top:18px;font-size:18px}.love b{color:var(--orange)}
+.legal-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:18px}.legal-links a{color:white;font-weight:900;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1000px){.products{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.wrap{padding:0 16px}.ticker{height:42px}.hero{padding:40px 0}.products,.contact-row{grid-template-columns:1fr}h1{font-size:34px}h2{font-size:28px}.big-price{font-size:66px}.nav-links{display:none}}
+
+.quality-card{padding:22px}
+  .quality-intro h2{font-size:28px}
+  .quality-flow{grid-template-columns:1fr;gap:16px}
+  .quality-step{max-width:520px;margin:0 auto}
+}
+
+
+.product-price-badge{
+  display:inline-flex;align-items:baseline;gap:6px;
+  margin-top:12px;padding:9px 14px;border-radius:999px;
+  background:#fff4e8;border:1px solid #ffd3a6;color:var(--blue);
+  font-weight:900;white-space:nowrap;
+}
+.product-price-badge .from{font-size:14px;color:var(--muted);font-weight:800}
+.product-price-badge .amount{font-size:24px;color:var(--orange);font-weight:900}
+@media(max-width:620px){
+  .product-price-badge{padding:8px 12px}
+  .product-price-badge .amount{font-size:21px}
+}
+
+
+.product-bottom .price{display:flex!important;align-items:baseline;gap:5px;white-space:nowrap}
+.product-bottom .price small{font-size:15px!important;font-weight:800;text-transform:none}
+.product-bottom .price strong{font-size:26px!important;line-height:1}
+@media(max-width:620px){
+ .product-bottom{align-items:center}
+ .product-bottom .price{justify-content:flex-start}
+ .product-bottom .price strong{font-size:23px!important}
+}
+
+
+.visual{position:relative}
+.availability-ribbon{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);
+  z-index:5;width:115%;padding:10px 8px;text-align:center;
+  background:rgba(255,111,0,.94);color:#fff;font-weight:900;
+  font-size:16px;letter-spacing:.2px;box-shadow:0 5px 14px rgba(6,31,79,.18);
+  pointer-events:none;
+}
+@media(max-width:620px){
+  .availability-ribbon{font-size:14px;padding:8px 6px;width:120%}
+}
+
+
+/* Einheitlicher Look für anklickbare Elemente */
+.nav-logo,
+.nav-links a:not(.btn),
+.detail-btn,
+.btn,
+.legal-links a,
+.contact-row a{
+  transition:background-color .22s ease,color .22s ease,border-color .22s ease,
+             box-shadow .22s ease,transform .22s ease;
+}
+
+.nav-logo,
+.nav-links a:not(.btn){
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:9px 13px;
+  border:1px solid rgba(6,31,79,.16);
+  border-radius:10px;
+  background:#fff;
+}
+.nav-logo:hover,
+.nav-links a:not(.btn):hover{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(6,31,79,.14);
+}
+
+.btn{
+  border:2px solid transparent;
+}
+.btn:hover{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+  transform:translateY(-2px);
+  box-shadow:0 16px 30px rgba(6,31,79,.22);
+}
+
+.detail-btn{
+  border:2px solid var(--orange);
+  box-shadow:0 5px 12px rgba(255,111,0,.16);
+}
+.detail-btn:hover{
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 10px 22px rgba(6,31,79,.18);
+}
+
+.product:has(.detail-btn){
+  transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease;
+}
+.product:has(.detail-btn):hover{
+  border-color:rgba(255,111,0,.7);
+  box-shadow:0 22px 48px rgba(6,31,79,.16);
+  transform:translateY(-4px);
+}
+
+.legal-links a{
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:9px;
+  text-decoration:none;
+}
+.legal-links a:hover{
+  background:#fff;
+  color:var(--blue);
+  border-color:#fff;
+  transform:translateY(-1px);
+}
+.contact-row a{
+  padding:8px 10px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:12px;
+}
+.contact-row a:hover{
+  background:rgba(255,255,255,.10);
+  border-color:rgba(255,255,255,.45);
+  transform:translateY(-1px);
+}
+
+a:focus-visible{
+  outline:3px solid rgba(255,111,0,.42);
+  outline-offset:3px;
+}
+
+@media(max-width:620px){
+  .nav-logo{padding:8px 11px}
+  .btn,.detail-btn{box-shadow:none}
+}
+@media(hover:none){
+  .nav-logo:hover,
+  .nav-links a:not(.btn):hover,
+  .btn:hover,
+  .detail-btn:hover,
+  .product:has(.detail-btn):hover,
+  .legal-links a:hover,
+  .contact-row a:hover{
+    transform:none;
+  }
+}
+
+
+/* Einhorn-Kachel: Bild füllt den Bereich besser aus, bleibt aber vollständig sichtbar */
+.einhorn-visual{
+  background:#fff;
+  padding:0 !important;
+}
+.einhorn-visual img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:0 !important;
+  margin:0 !important;
+  transform:scale(1.06);
+  transform-origin:center;
+}
+@media(max-width:620px){
+  .einhorn-visual img{
+    transform:scale(1.03);
+  }
+}
+
+
+.hero-welcome{
+  color:var(--blue);
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin:0 auto 16px;
+}
+.einhorn-visual{
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#fff !important;
+}
+.einhorn-visual img{
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  padding:0 !important;
+  margin:0 !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  transform:none !important;
+  display:block !important;
+}
+@media(max-width:620px){
+  .hero-welcome{
+    font-size:12px;
+    letter-spacing:.09em;
+    margin-bottom:12px;
+  }
+}
+
+
+/* Smartphone: Einhorn in der Startseiten-Kachel vollständig sichtbar */
+@media(max-width:620px){
+  .einhorn-visual{
+    background:#fff !important;
+    padding:0 !important;
+  }
+  .einhorn-visual img{
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    transform:none !important;
+    padding:4px !important;
+    margin:0 !important;
+  }
+}
+
+
+/* Kachelbilder: sauber auf Desktop und Smartphone */
+.product-photo{
+  background:#fff !important;
+  padding:0 !important;
+  overflow:hidden !important;
+}
+.product-photo img{
+  width:100% !important;
+  height:100% !important;
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+}
+@media(min-width:621px){
+  .paw-photo img{object-fit:cover !important}
+  .frozen-photo img,
+  .eiswagen-photo img,
+  .tank-photo img{object-fit:contain !important}
+}
+@media(max-width:620px){
+  .product-photo{height:190px !important}
+  .product-photo img{
+    object-fit:contain !important;
+    object-position:center center !important;
+  }
+}
+
+
+/* Einheitliche Produktbild-Kacheln */
+.visual,
+.product-photo,
+.einhorn-visual{
+  height:190px !important;
+  border-radius:18px !important;
+  overflow:hidden !important;
+  background:#f7f8fb !important;
+  padding:0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.visual img,
+.product-photo img,
+.einhorn-visual img{
+  width:100% !important;
+  height:100% !important;
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  border-radius:0 !important;
+  transform-origin:center center !important;
+}
+
+/* Feintuning je Motiv */
+.paw-photo img{
+  transform:scale(1.03);
+}
+.frozen-photo img{
+  transform:scale(1.02);
+}
+.eiswagen-photo img{
+  transform:scale(.96);
+}
+.tank-photo img{
+  transform:scale(.97);
+}
+.einhorn-visual img{
+  transform:scale(1.00);
+}
+
+/* Smartphone: gleiche Bildsprache, etwas mehr Höhe */
+@media(max-width:620px){
+  .visual,
+  .product-photo,
+  .einhorn-visual{
+    height:215px !important;
+    border-radius:16px !important;
+  }
+
+  .paw-photo img{transform:scale(1.00);}
+  .frozen-photo img{transform:scale(1.00);}
+  .eiswagen-photo img{transform:scale(.94);}
+  .tank-photo img{transform:scale(.95);}
+  .einhorn-visual img{transform:scale(.98);}
+}
+
+
+/* Größere, einheitliche Produktkacheln: Desktop immer 2 nebeneinander */
+.products{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:28px !important;
+  align-items:stretch;
+}
+
+.product{
+  min-height:560px !important;
+  padding:26px !important;
+}
+
+.product h3{
+  font-size:24px !important;
+  line-height:1.2 !important;
+  min-height:34px;
+  margin-bottom:18px !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  white-space:nowrap;
+}
+
+/* Letzte einzelne Kachel mittig ausrichten */
+.products .product:last-child:nth-child(odd){
+  grid-column:1 / -1;
+  width:calc(50% - 14px);
+  justify-self:center;
+}
+
+.visual,
+.product-photo,
+.einhorn-visual{
+  height:300px !important;
+  border-radius:20px !important;
+}
+
+.product-bottom{
+  margin-top:auto !important;
+}
+
+.product-bottom .price strong{
+  font-size:30px !important;
+}
+
+.detail-btn{
+  padding:12px 18px !important;
+  font-size:15px !important;
+}
+
+/* Tablet */
+@media(max-width:900px){
+  .products{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:20px !important;
+  }
+  .product{
+    min-height:520px !important;
+    padding:22px !important;
+  }
+  .product h3{
+    font-size:20px !important;
+  }
+  .visual,
+  .product-photo,
+  .einhorn-visual{
+    height:240px !important;
+  }
+}
+
+/* Smartphone: eine große Kachel pro Zeile */
+@media(max-width:700px){
+  .products{
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+  }
+  .products .product:last-child:nth-child(odd){
+    grid-column:auto;
+    width:100%;
+  }
+  .product{
+    min-height:0 !important;
+    padding:18px !important;
+  }
+  .product h3{
+    font-size:21px !important;
+    min-height:0;
+    white-space:normal;
+    margin-bottom:14px !important;
+  }
+  .visual,
+  .product-photo,
+  .einhorn-visual{
+    height:245px !important;
+    border-radius:18px !important;
+  }
+  .product-bottom{
+    gap:10px !important;
+  }
+  .detail-btn{
+    padding:11px 14px !important;
+    font-size:14px !important;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="ticker"><div class="ticker-track"><span class="ticker-sequence">
+  <span>B1 HÜPFBURGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>IHR ZUVERLÄSSIGER VERLEIHER AUS LEVERKUSEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>JETZT UNKOMPLIZIERT PER WHATSAPP ANFRAGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>SAUBER, SICHER UND NACH DIN EN 14960 ZERTIFIZIERT</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+</span><span class="ticker-sequence">
+  <span>B1 HÜPFBURGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>IHR ZUVERLÄSSIGER VERLEIHER AUS LEVERKUSEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>JETZT UNKOMPLIZIERT PER WHATSAPP ANFRAGEN</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+  <span>SAUBER, SICHER UND NACH DIN EN 14960 ZERTIFIZIERT</span>
+  <span class="ticker-logo"><img src="logo-laufbalken.png" alt=""></span>
+</span></div></div>
+<nav class="nav"><div class="wrap nav-inner"><a class="nav-logo" href="index.html">B1 Hüpfburgen</a><div class="nav-links"><a href="#produkte">Unsere Hüpfburgen</a><a href="#lieferung">Lieferung</a><a href="https://wa.me/4915114337536?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20eine%20H%C3%BCpfburg%20bei%20B1%20H%C3%BCpfburgen%20anfragen." class="btn" target="_blank" rel="noopener">WhatsApp Anfrage</a></div></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-welcome">WILLKOMMEN BEI B1 HÜPFBURGEN</div>
+    <div class="logo"><img src="logo.jpeg" alt="B1 Hüpfburgen Logo"></div>
+    <a class="btn" href="https://wa.me/4915114337536?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20eine%20H%C3%BCpfburg%20bei%20B1%20H%C3%BCpfburgen%20anfragen." target="_blank" rel="noopener">JETZT PER WHATSAPP ANFRAGEN</a>
+  </div>
+</header>
+
+<main>
+<section id="produkte"><div class="wrap"><div class="section-title"><h2>Unsere Hüpfburgen</h2></div><div class="products">
+
+<article class="card product">
+<h3>Paw Patrol</h3><div class="visual product-photo paw-photo"><img src="paw-patrol-kachel.jpg" alt="Paw Patrol Hüpfburg"></div>
+<ul class="specs"><li>📏 <span>4 × 4 × 3,3 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
+<div class="product-bottom"><div class="price"><small>ab</small> <strong>89 €</strong></div><a class="detail-btn" href="paw-patrol.html">MEHR ERFAHREN</a></div>
+</article>
+
+<article class="card product">
+<h3>Frozen</h3><div class="visual product-photo frozen-photo"><img src="frozen-kachel.jpg" alt="Frozen Hüpfburg"></div>
+<ul class="specs"><li>📏 <span>4 × 4 × 3,5 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
+<div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div><a class="detail-btn" href="frozen.html">MEHR ERFAHREN</a></div>
+</article>
+
+<article class="card product">
+<h3>Einhorn</h3><div class="visual einhorn-visual"><img src="einhorn-01.jpg" alt="Einhorn Hüpfburg"></div>
+<ul class="specs"><li>📏 <span>4,7 × 3,1 × 4,2 m</span></li><li>👥 <span>max. 7 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
+<div class="product-bottom"><div class="price"><small>ab</small> <strong>79 €</strong></div><a class="detail-btn" href="einhorn.html">MEHR ERFAHREN</a></div>
+</article>
+
+<article class="card product coming">
+<h3>B1 Tanklöschfahrzeug</h3>
+<div class="visual product-photo tank-photo"><img src="tankloeschfahrzeug-kachel.jpg" alt="B1 Tanklöschfahrzeug"><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
+<ul class="specs"><li>📏 <span>7 × 3,5 × 3,5 m</span></li><li>🚒 <span>Bilder &amp; Details folgen</span></li></ul>
+<div class="product-bottom"><div class="price"><small>ab</small> <strong>149 €</strong></div></div>
+</article>
+
+<article class="card product coming">
+<h3>B1 Eiswagen</h3>
+<div class="visual product-photo eiswagen-photo"><img src="eiswagen-kachel.jpg" alt="B1 Eiswagen"><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
+<ul class="specs"><li>📏 <span>5 × 3 × 3,5 m</span></li><li>🍦 <span>Bilder &amp; Details folgen</span></li></ul>
+<div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div></div>
+</article>
+
+</div></div></section>
+
+<section id="lieferung"><div class="wrap info-grid">
+<div class="card block"><h3>Warum B1 Hüpfburgen?</h3><ul class="checklist">
+<li><span class="check">✓</span>DIN EN zertifiziert</li>
+<li><span class="check">✓</span>Professionell gereinigt und kontrolliert</li>
+<li><span class="check">✓</span>Pünktliche Lieferung & Abholung</li>
+<li><span class="check">✓</span>Faire und transparente Preise</li>
+<li><span class="check">✓</span>Persönlicher Ansprechpartner</li>
+</ul></div>
+
+<div class="card delivery"><div class="delivery-head">🚚 LIEFER- &<br>ABHOLSERVICE</div><div class="delivery-content">
+<div class="big-price">50<small> €</small></div><div class="pauschal">PAUSCHAL<br>BIS 15 KM</div>
+<ul class="checklist"><li><span class="check">✓</span>Lieferung bis zum Veranstaltungsort</li><li><span class="check">✓</span>Abholung nach Mietende</li><li><span class="check">✓</span>Flexible Terminvereinbarung</li><li><span class="check">✓</span>Einfacher Selbstaufbau</li></ul>
+<div class="orange-note">Weitere Entfernungen nur auf Anfrage.</div>
+</div></div>
+
+<div class="card block map"><h3>Wo wir für Spaß sorgen</h3><div class="map-visual">
+<div class="place main" style="left:52%;top:52%"><span class="mini">🏰</span>Leverkusen</div>
+<div class="place" style="left:28%;top:42%"><span class="mini">🏰</span>Köln</div>
+<div class="place" style="left:28%;top:76%"><span class="mini">🏰</span>Monheim</div>
+<div class="place" style="left:45%;top:18%"><span class="mini">🏰</span>Langenfeld</div>
+<div class="place" style="left:50%;top:88%"><span class="mini">🏰</span>Leichlingen</div>
+<div class="place" style="left:72%;top:72%"><span class="mini">🏰</span>Burscheid</div>
+<div class="place" style="left:82%;top:46%"><span class="mini">🏰</span>Bergisch<br>Gladbach</div>
+<div class="place" style="left:77%;top:20%"><span class="mini">🏰</span>Odenthal</div>
+</div><p>Lieferung im Raum Leverkusen & Umgebung – weitere Orte auf Anfrage.</p></div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+<h2>Jetzt unverbindlich anfragen</h2>
+<p style="margin-top:14px"><a class="btn" href="https://wa.me/4915114337536?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20eine%20H%C3%BCpfburg%20bei%20B1%20H%C3%BCpfburgen%20anfragen." target="_blank" rel="noopener">💬 Per WhatsApp anfragen</a></p>
+<div class="contact-row">
+<a href="mailto:B1Huepfburgen@outlook.de"><span class="contact-icon">✉</span>B1Huepfburgen@outlook.de</a>
+<span><span class="contact-icon">📷</span>@B1_Hüpfburgen_Leverkusen</span>
+<span><span class="contact-icon">🛒</span>eBay Kleinanzeigen: B1 Hüpfburgen Leverkusen</span>
+<span><span class="contact-icon">🌐</span>b1-huepfburgen.de</span>
+</div>
+<div class="love"><b>♥</b> Mit Leidenschaft für unvergessliche Kinderfeste.</div>
+<div class="legal-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a></div>
+</div></footer>
+</body></html>
+
+<style>
+.logo, .logo::before, .logo::after{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  outline:none !important;
+}
+</style>
