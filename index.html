@@ -546,6 +546,25 @@ a:focus-visible{
   }
 }
 
+
+/* Google Bewertungen */
+.reviews-section{padding:34px 0 64px;background:linear-gradient(180deg,#fff 0,#f8faff 100%)}
+.reviews-summary{text-align:center;margin:0 auto 26px}
+.google-label{display:inline-flex;align-items:center;gap:9px;font-weight:900;color:#34445f;margin-top:10px}
+.google-g{font-size:22px;font-weight:900;color:#4285f4}
+.review-score{font-size:18px;font-weight:900;color:var(--blue)}
+.stars{color:#fbbc04;letter-spacing:2px;font-size:22px;white-space:nowrap}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review-card{padding:24px;display:flex;flex-direction:column;min-height:250px}
+.review-head{display:flex;align-items:center;gap:13px;margin-bottom:12px}
+.review-avatar{width:46px;height:46px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px;flex:0 0 auto}
+.review-name{font-weight:900;font-size:18px;color:var(--blue)}
+.review-source{font-size:13px;color:var(--muted);font-weight:700}
+.review-text{margin-top:12px;color:#263a62;font-size:16px;line-height:1.65}
+.review-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+.review-link{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:2px solid var(--blue);border-radius:999px;font-weight:900;color:var(--blue);transition:.22s ease}
+.review-link:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr}.review-card{min-height:0}}
 </style>
 </head>
 <body>
@@ -614,6 +633,37 @@ a:focus-visible{
 </article>
 
 </div></div></section>
+
+<section class="reviews-section" id="bewertungen">
+  <div class="wrap">
+    <div class="section-title">
+      <div class="kicker">Google Bewertungen</div>
+      <h2>Das sagen unsere Kunden</h2>
+      <p class="lead">Echte Rückmeldungen von Kunden von B1 Hüpfburgen.</p>
+    </div>
+    <div class="reviews-summary">
+      <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+      <div class="google-label"><span class="google-g">G</span><span class="review-score">5,0 bei Google</span></div>
+    </div>
+    <div class="reviews-grid">
+      <article class="card review-card">
+        <div class="review-head"><div class="review-avatar">J</div><div><div class="review-name">Jonas Pütz</div><div class="review-source">Google-Bewertung</div></div></div>
+        <div class="stars" aria-label="5 Sterne">★★★★★</div>
+        <p class="review-text">„Super Produkt! Sehr netter Vermieter, qualitativ hochwertig verarbeitete Hüpfburg in einem top Zustand.“</p>
+      </article>
+      <article class="card review-card">
+        <div class="review-head"><div class="review-avatar">D</div><div><div class="review-name">Dennis Zimmermann</div><div class="review-source">Google-Bewertung</div></div></div>
+        <div class="stars" aria-label="5 Sterne">★★★★★</div>
+        <p class="review-text">„Mega schneller Kontakt. Es lief alles reibungslos und es war jederzeit jemand zu erreichen.“</p>
+      </article>
+      <article class="card review-card">
+        <div class="review-head"><div class="review-avatar">T</div><div><div class="review-name">Tim Neukirch</div><div class="review-source">Google-Bewertung</div></div></div>
+        <div class="stars" aria-label="5 Sterne">★★★★★</div>
+        <p class="review-text">„Unkompliziert, freundlich, sauber. Rundum zufrieden! Und die Kinder waren natürlich begeistert.“</p>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section id="lieferung"><div class="wrap info-grid">
 <div class="card block"><h3>Warum B1 Hüpfburgen?</h3><ul class="checklist">
