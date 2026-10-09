@@ -565,6 +565,11 @@ a:focus-visible{
 .review-link{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:2px solid var(--blue);border-radius:999px;font-weight:900;color:var(--blue);transition:.22s ease}
 .review-link:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
 @media(max-width:900px){.reviews-grid{grid-template-columns:1fr}.review-card{min-height:0}}
+
+/* Zwei transparente Miettarife pro Hüpfburg */
+.tariff-prices{display:grid;gap:6px;margin:0 0 16px;color:var(--blue)}
+.tariff-prices>div{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:15px}
+.tariff-prices strong{font-size:20px;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -603,33 +608,33 @@ a:focus-visible{
 <article class="card product">
 <h3>Paw Patrol</h3><div class="visual product-photo paw-photo"><img src="paw-patrol-01.jpg" alt="Paw Patrol Hüpfburg"></div>
 <ul class="specs"><li>📏 <span>4 × 4 × 3,3 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
-<div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div><a class="detail-btn" href="paw-patrol.html">MEHR ERFAHREN</a></div>
+<div class="tariff-prices"><div><span>Einzeltag (Mo.–Do.)</span><strong>99 €</strong></div><div><span>Wochenende (Fr.–Mo.)</span><strong>149 €</strong></div></div><div class="product-bottom"><a class="detail-btn" href="paw-patrol.html">MEHR ERFAHREN</a></div>
 </article>
 
 <article class="card product">
 <h3>Frozen</h3><div class="visual product-photo frozen-photo"><img src="frozen-01.jpg" alt="Frozen Hüpfburg"></div>
 <ul class="specs"><li>📏 <span>4 × 4 × 3,5 m</span></li><li>👥 <span>max. 6 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
-<div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div><a class="detail-btn" href="frozen.html">MEHR ERFAHREN</a></div>
+<div class="tariff-prices"><div><span>Einzeltag (Mo.–Do.)</span><strong>99 €</strong></div><div><span>Wochenende (Fr.–Mo.)</span><strong>149 €</strong></div></div><div class="product-bottom"><a class="detail-btn" href="frozen.html">MEHR ERFAHREN</a></div>
 </article>
 
 <article class="card product">
 <h3>Einhorn</h3><div class="visual einhorn-visual"><img src="einhorn-01.jpg" alt="Einhorn Hüpfburg"></div>
 <ul class="specs"><li>📏 <span>4,7 × 3,1 × 4,2 m</span></li><li>👥 <span>max. 7 Kinder</span></li><li>📐 <span>max. 1,50 m Körpergröße</span></li></ul>
-<div class="product-bottom"><div class="price"><small>ab</small> <strong>79 €</strong></div><a class="detail-btn" href="einhorn.html">MEHR ERFAHREN</a></div>
+<div class="tariff-prices"><div><span>Einzeltag (Mo.–Do.)</span><strong>89 €</strong></div><div><span>Wochenende (Fr.–Mo.)</span><strong>139 €</strong></div></div><div class="product-bottom"><a class="detail-btn" href="einhorn.html">MEHR ERFAHREN</a></div>
 </article>
 
 <article class="card product coming">
 <h3>B1 Tanklöschfahrzeug</h3>
 <div class="visual product-photo tank-photo"><img src="tankloeschfahrzeug-kachel.jpg" alt="B1 Tanklöschfahrzeug"><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
 <ul class="specs"><li>📏 <span>7 × 3,5 × 3,5 m</span></li><li>🚒 <span>Bilder &amp; Details folgen</span></li></ul>
-<div class="product-bottom"><div class="price"><small>ab</small> <strong>149 €</strong></div></div>
+<div class="tariff-prices"><div><span>Einzeltag (Mo.–Do.)</span><strong>159 €</strong></div><div><span>Wochenende (Fr.–Mo.)</span><strong>249 €</strong></div></div><div class="product-bottom"></div>
 </article>
 
 <article class="card product coming">
 <h3>B1 Eiswagen</h3>
 <div class="visual product-photo eiswagen-photo"><img src="eiswagen-kachel.png" alt="B1 Eiswagen"><div class="availability-ribbon">Ab 2027 verfügbar</div></div>
 <ul class="specs"><li>📏 <span>5 × 3 × 3,5 m</span></li><li>🍦 <span>Bilder &amp; Details folgen</span></li></ul>
-<div class="product-bottom"><div class="price"><small>ab</small> <strong>99 €</strong></div></div>
+<div class="tariff-prices"><div><span>Einzeltag (Mo.–Do.)</span><strong>119 €</strong></div><div><span>Wochenende (Fr.–Mo.)</span><strong>179 €</strong></div></div><div class="product-bottom"></div>
 </article>
 
 </div></div></section>
