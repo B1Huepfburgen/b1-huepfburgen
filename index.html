@@ -574,8 +574,8 @@ a:focus-visible{
 /* Modernisierung 2026: großflächiger Hintergrund, dezente Bewegung */
 :root{--shadow:0 18px 55px rgba(6,31,79,.13);--radius:24px}
 body{background:#edf3fb;color:var(--blue)}
-body::before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(115deg,rgba(5,24,58,.83),rgba(7,43,94,.55)),url("website-hintergrund.jpg") center/cover no-repeat}
-body::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(238,245,253,.76),rgba(245,249,255,.91) 36%,rgba(240,246,255,.86))}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(115deg,rgba(5,24,58,.52),rgba(7,43,94,.32)),url("website-hintergrund.jpg") center/cover no-repeat}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(238,245,253,.42),rgba(245,249,255,.56) 36%,rgba(240,246,255,.52))}
 .nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.93);backdrop-filter:blur(14px)}
 .hero{max-width:none;padding:85px 22px 90px;background:linear-gradient(120deg,rgba(4,22,54,.77),rgba(7,40,87,.48)),url("website-hintergrund.jpg") center 45%/cover no-repeat;box-shadow:inset 0 -40px 60px rgba(4,22,54,.13)}
 .hero-welcome{color:#fff;letter-spacing:.17em;text-shadow:0 2px 12px rgba(0,0,0,.35)}
@@ -594,7 +594,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradi
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
 
 /* Wischbare Google-Bewertungen */
-.reviews-section{background:rgba(248,250,255,.92)}
+.reviews-section{background:rgba(248,250,255,.64)}
 .review-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 14px;font-weight:800}
 .review-controls>div{display:flex;gap:8px}
 .review-arrow{width:42px;height:42px;border-radius:50%;border:1px solid #cbd5e1;background:white;color:var(--blue);font-size:28px;cursor:pointer}
@@ -684,7 +684,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradi
       <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
       <div class="google-label"><span class="google-g">G</span><span class="review-score">5,0 bei Google · 7 Rezensionen</span></div>
     </div>
-    <div class="review-controls"><span>Alle 7 Kundenbewertungen</span><div><button type="button" class="review-arrow" id="review-prev" aria-label="Vorherige Bewertung">‹</button><button type="button" class="review-arrow" id="review-next" aria-label="Nächste Bewertung">›</button></div></div>
+    <div class="review-controls"><div><button type="button" class="review-arrow" id="review-prev" aria-label="Vorherige Bewertung">‹</button><button type="button" class="review-arrow" id="review-next" aria-label="Nächste Bewertung">›</button></div></div>
     <div class="reviews-grid" id="review-carousel" tabindex="0" aria-label="Google-Kundenbewertungen, horizontal scrollbar">
       <article class="card review-card"><div class="review-head"><div class="review-avatar">S</div><div><div class="review-name">S.N. B.</div><div class="review-source">Google-Bewertung</div></div></div><div class="stars" aria-label="5 Sterne">★★★★★</div><p class="review-text">„Alles bestens. Top Service, sehr freundlicher Kontakt und die Hüpfburg war in einem einwandfreien Zustand, sauber und makellos. Immer wieder gerne.“</p></article>
       <article class="card review-card"><div class="review-head"><div class="review-avatar">V</div><div><div class="review-name">Valentina Seel</div><div class="review-source">Google-Bewertung</div></div></div><div class="stars" aria-label="5 Sterne">★★★★★</div><p class="review-text">„Wir haben für den Kinder Geburtstag unserer Tochter eine Einhorn Hüpfburg hier geliehen und sind super zufrieden mit der Abwicklung und Flexibilität der Abholung und Abgabe. Die Kinder hatten super Spaß und der Auf- und Abbau ist einfach und unkompliziert durch die Anleitungen. Herzlichen Dank!“</p></article>
