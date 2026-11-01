@@ -655,6 +655,57 @@ main{background:transparent!important}
  #produkte .section-title{margin-bottom:22px}
  #produkte .section-title h2{font-size:28px}
 }
+
+/* B1 Design-Feinschliff: klare Hierarchie, Bildhintergrund bleibt erhalten */
+:root{--shadow:0 14px 42px rgba(6,31,79,.10);--radius:22px}
+body::before{position:fixed!important;inset:0!important;height:100vh!important;background-image:linear-gradient(180deg,rgba(240,246,254,.72),rgba(240,246,254,.81)),url("website-hintergrund-lang.jpg")!important;background-size:cover!important;background-repeat:no-repeat!important;background-position:center center!important}
+.nav{box-shadow:0 4px 20px rgba(6,31,79,.07);border-bottom:1px solid rgba(6,31,79,.08)}
+.nav-inner{gap:16px}.nav-links{gap:12px}.nav-links a:not(.btn){border-color:transparent;background:transparent}
+.nav-links a:not(.btn):hover{background:#edf3fa;color:var(--blue);border-color:#edf3fa}
+.hero{padding:66px 20px 64px!important;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(248,251,255,.88))!important;border-bottom:1px solid rgba(6,31,79,.08)!important}
+.hero .wrap{max-width:860px}.hero-welcome{color:var(--orange)!important;font-size:12px!important;letter-spacing:.18em!important;margin-bottom:16px!important}
+.hero .logo img{width:min(440px,76vw)!important;filter:drop-shadow(0 10px 20px rgba(6,31,79,.09))!important}
+.hero-subtitle{font-size:18px;font-weight:700;line-height:1.5;color:#31456a;margin:18px auto 0;max-width:630px}
+.hero-trust{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero-trust span{font-size:13px;font-weight:800;color:#28436d;background:#fff;border:1px solid #dce5f0;padding:8px 13px;border-radius:999px}
+#produkte{padding-top:64px;padding-bottom:70px}
+#produkte .section-title{margin-bottom:34px}
+#produkte .section-title h2{font-size:clamp(28px,3vw,38px);text-shadow:none!important}
+.section-description{max-width:660px;margin:10px auto 0;color:#4b5d76;font-size:16px;text-align:center}
+.products{gap:24px!important}
+.product{background:#fff!important;border:1px solid #e5ebf3!important;box-shadow:0 12px 35px rgba(6,31,79,.10)!important;border-radius:24px!important}
+.product h3{font-size:23px!important}
+.product .visual{background:#f4f7fb!important}
+.tariff-prices{border-top:1px solid #e9eef5;padding-top:16px;margin-top:8px!important}
+.tariff-prices>div{padding:3px 0}
+.detail-btn{border-radius:12px!important;text-align:center;min-width:155px}
+.reviews-section{background:rgba(248,251,255,.94)!important;border-top:1px solid #e5ebf3;border-bottom:1px solid #e5ebf3}
+#lieferung{padding-top:70px;padding-bottom:70px}
+#lieferung .card{box-shadow:0 12px 35px rgba(6,31,79,.10)!important}
+footer{margin-top:0}
+@media(max-width:700px){
+ body::before{background-image:linear-gradient(180deg,rgba(240,246,254,.78),rgba(240,246,254,.86)),url("website-hintergrund-mobil.jpg")!important;background-size:cover!important;background-position:center center!important}
+ .ticker{height:36px}.ticker-track{font-size:11px}
+ .nav-inner{min-height:0;padding-top:9px;padding-bottom:10px;justify-content:center}
+ .nav-logo{font-size:13px;padding:6px 10px}
+ .nav-links{width:100%;gap:6px;justify-content:center}
+ .nav-links a:not(.btn){background:#f5f7fb;border:1px solid #e2e8f0;padding:8px 10px;font-size:12px}
+ .nav-links .btn{padding:9px 12px;font-size:12px;box-shadow:none}
+ .hero{padding:38px 16px 40px!important}
+ .hero-welcome{font-size:10px!important;letter-spacing:.12em!important}
+ .hero .logo img{width:min(320px,79vw)!important}
+ .hero-subtitle{font-size:15px;margin-top:14px}
+ .hero-trust{gap:7px;margin-top:17px}.hero-trust span{font-size:11px;padding:7px 10px}
+ #produkte{padding-top:43px;padding-bottom:48px}
+ #produkte .section-title{margin-bottom:25px}
+ #produkte .section-title h2{font-size:28px!important}
+ .section-description{font-size:14px}
+ .products{gap:16px!important}.product{padding:18px!important;border-radius:20px!important}
+ .product .visual{height:225px!important}
+ #lieferung{padding-top:46px;padding-bottom:48px}
+ .contact-row{gap:12px}.contact-row a,.contact-row span{overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 </style>
 </head>
 <body>
@@ -683,11 +734,13 @@ main{background:transparent!important}
   <div class="wrap">
     <div class="hero-welcome">WILLKOMMEN BEI B1 HÜPFBURGEN</div>
     <div class="logo"><img src="b1-logo-transparent.png" alt="B1 Hüpfburgen Logo"></div>
+    <p class="hero-subtitle">Hüpfburgen für unvergessliche Kinderfeste in Leverkusen und Umgebung.</p>
+    <div class="hero-trust"><span>Persönlicher Service</span><span>Sauber &amp; geprüft</span><span>Faire Mietpreise</span></div>
   </div>
 </header>
 
 <main>
-<section id="produkte"><div class="wrap"><div class="section-title"><h2>Unsere Hüpfburgen</h2></div><div class="products">
+<section id="produkte"><div class="wrap"><div class="section-title"><h2>Unsere Hüpfburgen</h2><p class="section-description">Entdecke unsere Hüpfburgen und finde das passende Highlight für deine Feier.</p></div><div class="products">
 
 <article class="card product">
 <h3>Paw Patrol</h3><div class="visual product-photo paw-photo"><img src="paw-patrol-01.jpg" alt="Paw Patrol Hüpfburg"></div>
