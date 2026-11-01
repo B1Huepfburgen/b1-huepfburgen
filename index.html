@@ -705,15 +705,14 @@ footer{margin-top:0}
  #lieferung{padding-top:46px;padding-bottom:48px}
  .contact-row{gap:12px}.contact-row a,.contact-row span{overflow-wrap:anywhere}
 }
-/* Geschwungene Begruessung ueber dem Logo */
-.hero .hero-arch{width:min(690px,100%);margin:0 auto -8px!important;line-height:0!important;color:var(--blue)!important}
+/* Aufgeblasener Schriftbogen: nur die Ueberschrift wurde angepasst */
+.hero .hero-arch{width:min(790px,100%);margin:0 auto -12px!important;line-height:0!important}
 .hero-arch svg{display:block;width:100%;height:auto;overflow:visible}
-.hero-arch text{font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif;font-size:36px;font-weight:900;letter-spacing:1.5px;fill:#082b63;stroke:rgba(255,255,255,.92);stroke-width:2.6px;paint-order:stroke fill}
+.hero-arch .balloon-outline{font-family:"Arial Rounded MT Bold","Trebuchet MS",Arial,sans-serif;font-size:39px;font-weight:900;letter-spacing:.2px;fill:#ff9500;stroke:#073c91;stroke-width:12px;stroke-linejoin:round;paint-order:stroke fill;filter:drop-shadow(0 5px 2px rgba(5,28,72,.28))}
+.hero-arch .balloon-face{font-family:"Arial Rounded MT Bold","Trebuchet MS",Arial,sans-serif;font-size:39px;font-weight:900;letter-spacing:.2px;fill:#ff9e05;stroke:#ffcf46;stroke-width:2px;stroke-linejoin:round;paint-order:stroke fill}
+.hero-arch .balloon-gloss{font-family:"Arial Rounded MT Bold","Trebuchet MS",Arial,sans-serif;font-size:39px;font-weight:900;letter-spacing:.2px;fill:none;stroke:rgba(255,246,194,.72);stroke-width:1.5px;paint-order:stroke fill;transform:translateY(-2px)}
 .hero .logo{position:relative;z-index:1}
-@media(max-width:700px){
- .hero .hero-arch{width:min(460px,100%);margin:0 auto -4px!important}
- .hero-arch text{font-size:39px;letter-spacing:.3px;stroke-width:3px}
-}
+@media(max-width:700px){.hero .hero-arch{width:100%;margin:0 auto -4px!important}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 </style>
 </head>
@@ -742,9 +741,11 @@ footer{margin-top:0}
 <header class="hero">
   <div class="wrap">
     <div class="hero-welcome hero-arch" role="heading" aria-level="1" aria-label="Willkommen bei B1 Hüpfburgen">
-      <svg viewBox="0 0 760 180" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-        <defs><path id="b1-welcome-arc" d="M 45,159 Q 380,-35 715,159" /></defs>
-        <text text-anchor="middle"><textPath href="#b1-welcome-arc" startOffset="50%">WILLKOMMEN BEI B1 HÜPFBURGEN</textPath></text>
+      <svg viewBox="0 0 800 200" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs><path id="b1-welcome-arc" d="M 30,180 Q 400,-32 770,180" /></defs>
+        <text class="balloon-outline" text-anchor="middle"><textPath href="#b1-welcome-arc" startOffset="50%" textLength="710" lengthAdjust="spacingAndGlyphs">WILLKOMMEN BEI B1 HÜPFBURGEN</textPath></text>
+        <text class="balloon-face" text-anchor="middle"><textPath href="#b1-welcome-arc" startOffset="50%" textLength="710" lengthAdjust="spacingAndGlyphs">WILLKOMMEN BEI B1 HÜPFBURGEN</textPath></text>
+        <text class="balloon-gloss" text-anchor="middle"><textPath href="#b1-welcome-arc" startOffset="50%" textLength="710" lengthAdjust="spacingAndGlyphs">WILLKOMMEN BEI B1 HÜPFBURGEN</textPath></text>
       </svg>
     </div>
     <div class="logo"><img src="b1-logo-transparent.png" alt="B1 Hüpfburgen Logo"></div>
