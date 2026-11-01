@@ -621,6 +621,15 @@ main{background:transparent}
 }
 
 .logo, .logo::before, .logo::after{background:transparent!important;border:none!important;box-shadow:none!important;outline:none!important}
+/* Ruhigere Logo-Buehne ohne zusaetzliche Rahmen oder Schatten */
+.hero{padding-bottom:66px}
+.hero .logo{margin:10px auto 0}
+.hero .logo img{filter:none;max-width:470px}
+@media(max-width:700px){.hero{padding-bottom:48px}.hero .logo{margin-bottom:0}}
+/* Freigestelltes Hauptlogo ohne Kartenhintergrund */
+.hero .logo{background:none!important;box-shadow:none!important;padding:0!important}
+.hero .logo img{width:min(560px,88vw);max-width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 10px 16px rgba(0,16,45,.22))}
+@media(max-width:700px){.hero .logo img{width:min(410px,90vw)} }
 </style>
 </head>
 <body>
@@ -648,8 +657,7 @@ main{background:transparent}
 <header class="hero">
   <div class="wrap">
     <div class="hero-welcome">WILLKOMMEN BEI B1 HÜPFBURGEN</div>
-    <div class="logo"><img src="logo.jpeg" alt="B1 Hüpfburgen Logo"></div>
-    <a class="btn" href="https://wa.me/4915114337536?text=Hallo%2C%20ich%20m%C3%B6chte%20gerne%20eine%20H%C3%BCpfburg%20bei%20B1%20H%C3%BCpfburgen%20anfragen." target="_blank" rel="noopener">JETZT PER WHATSAPP ANFRAGEN</a>
+    <div class="logo"><img src="b1-logo-transparent.png" alt="B1 Hüpfburgen Logo"></div>
   </div>
 </header>
 
