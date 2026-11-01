@@ -630,6 +630,29 @@ main{background:transparent}
 .hero .logo{background:none!important;box-shadow:none!important;padding:0!important}
 .hero .logo img{width:min(560px,88vw);max-width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 10px 16px rgba(0,16,45,.22))}
 @media(max-width:700px){.hero .logo img{width:min(410px,90vw)} }
+
+/* B1 Startseite: ruhige, klare Darstellung auf allen Bildschirmgroessen */
+html,body{background:#f3f6fb!important}
+body::before,body::after{content:none!important;display:none!important}
+main{background:#f3f6fb!important}
+.hero{max-width:none!important;background:linear-gradient(180deg,#ffffff 0%,#f3f6fb 100%)!important;box-shadow:none!important;padding:62px 20px 58px!important;border-bottom:1px solid #e4eaf2}
+.hero-welcome{color:var(--blue)!important;text-shadow:none!important;letter-spacing:.12em!important;font-size:13px!important;margin-bottom:20px!important}
+.hero .logo{margin:0 auto!important;padding:0!important;background:transparent!important}
+.hero .logo img{width:min(490px,84vw)!important;max-width:100%!important;height:auto!important;filter:drop-shadow(0 9px 14px rgba(6,31,79,.10))!important}
+#produkte{background:#f3f6fb;padding-top:54px}
+#produkte .section-title{margin-bottom:32px}
+#produkte .section-title h2{color:var(--blue);text-shadow:none!important}
+.card{background:#fff!important;backdrop-filter:none!important;border:1px solid #e3e9f1!important}
+.reviews-section{background:#fff!important}
+#lieferung{background:#f3f6fb}
+@media(max-width:700px){
+ .hero{padding:38px 16px 42px!important}
+ .hero-welcome{font-size:11px!important;letter-spacing:.08em!important;margin-bottom:16px!important}
+ .hero .logo img{width:min(350px,82vw)!important}
+ #produkte{padding-top:36px}
+ #produkte .section-title{margin-bottom:22px}
+ #produkte .section-title h2{font-size:28px}
+}
 </style>
 </head>
 <body>
